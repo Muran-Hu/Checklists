@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  CheckListView.swift
 //  Checklists
 //
 //  Created by Mac on 2023/3/20.
@@ -13,7 +13,7 @@ struct CheckListItem: Identifiable {
     var isChecked: Bool = false
 }
 
-struct ContentView: View {
+struct CheckListView: View {
     
     @State var checkListItems = [
         CheckListItem(name: "Walk the dog"),
@@ -70,6 +70,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        CheckListView()
     }
 }

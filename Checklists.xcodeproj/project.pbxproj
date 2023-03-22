@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0436517729C89DA3008B57C6 /* ChecklistsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0436517629C89DA3008B57C6 /* ChecklistsApp.swift */; };
-		0436517929C89DA3008B57C6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0436517829C89DA3008B57C6 /* ContentView.swift */; };
+		0436517929C89DA3008B57C6 /* CheckListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0436517829C89DA3008B57C6 /* CheckListView.swift */; };
 		0436517B29C89DA6008B57C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0436517A29C89DA5008B57C6 /* Assets.xcassets */; };
 		0436517E29C89DA6008B57C6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0436517D29C89DA6008B57C6 /* Preview Assets.xcassets */; };
 		0436518829C89DA6008B57C6 /* ChecklistsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0436518729C89DA6008B57C6 /* ChecklistsTests.swift */; };
@@ -36,7 +36,7 @@
 /* Begin PBXFileReference section */
 		0436517329C89DA3008B57C6 /* Checklists.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Checklists.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0436517629C89DA3008B57C6 /* ChecklistsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistsApp.swift; sourceTree = "<group>"; };
-		0436517829C89DA3008B57C6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0436517829C89DA3008B57C6 /* CheckListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckListView.swift; sourceTree = "<group>"; };
 		0436517A29C89DA5008B57C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0436517D29C89DA6008B57C6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0436518329C89DA6008B57C6 /* ChecklistsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChecklistsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,7 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				0436517629C89DA3008B57C6 /* ChecklistsApp.swift */,
-				0436517829C89DA3008B57C6 /* ContentView.swift */,
+				0436517829C89DA3008B57C6 /* CheckListView.swift */,
 				0436517A29C89DA5008B57C6 /* Assets.xcassets */,
 				0436517C29C89DA6008B57C6 /* Preview Content */,
 			);
@@ -257,7 +257,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0436517929C89DA3008B57C6 /* ContentView.swift in Sources */,
+				0436517929C89DA3008B57C6 /* CheckListView.swift in Sources */,
 				0436517729C89DA3008B57C6 /* ChecklistsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
