@@ -7,27 +7,37 @@
 
 import SwiftUI
 
+struct CheckListItem: Identifiable {
+    let id = UUID()
+    var name: String
+    var isChecked: Bool = false
+}
+
 struct ContentView: View {
     
     @State var checkListItems = [
-        "Walk the dog",
-        "Brush my teeth",
-        "Learn iOS development",
-        "Soccer practice",
-        "Eat ice cream"]
+        CheckListItem(name: "Walk the dog"),
+        CheckListItem(name: "Brush my teeth"),
+        CheckListItem(name: "Learn iOS development", isChecked: true),
+        CheckListItem(name: "Soccer practice"),
+        CheckListItem(name: "Eat ice cream")
+    ]
     
     var body: some View {
         NavigationView {
             List {
-                ForEach(checkListItems, id: \.self) { item in
-                    Text(item)
-                        .onTapGesture {
-                            let indexsToRemove = IndexSet(integersIn: 0...4)
-                            self.checkListItems.remove(atOffsets: indexsToRemove)
-//                            self.checkListItems.remove(at: 0)
-//                            self.checkListItems.append(item + "\(Int.random(in: 1...10))")
-                            self.printAll()
+                ForEach(checkListItems) { checkListItem in
+                    HStack {
+                        Text(checkListItem.name)
+                        Spacer()
+                        Text(checkListItem.isChecked ? "✅" : "☑️")
+                    }
+                    .background(Color.white)
+                    .onTapGesture {
+                        if let matchingIndex = checkListItems.firstIndex(where: {$0.id == checkListItem.id}) {
+                            checkListItems[matchingIndex].isChecked.toggle()
                         }
+                    }
                 }
                 .onDelete(perform: deleteListItem)
                 .onMove(perform: moveListItem)
