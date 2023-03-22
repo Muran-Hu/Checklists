@@ -14,6 +14,8 @@
 		0436518829C89DA6008B57C6 /* ChecklistsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0436518729C89DA6008B57C6 /* ChecklistsTests.swift */; };
 		0436519229C89DA6008B57C6 /* ChecklistsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0436519129C89DA6008B57C6 /* ChecklistsUITests.swift */; };
 		0436519429C89DA6008B57C6 /* ChecklistsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0436519329C89DA6008B57C6 /* ChecklistsUITestsLaunchTests.swift */; };
+		04C49DA529CB38A20042E04B /* Checklist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C49DA429CB38A20042E04B /* Checklist.swift */; };
+		04C49DA729CB39C90042E04B /* ChecklistItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C49DA629CB39C90042E04B /* ChecklistItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,9 @@
 		0436518D29C89DA6008B57C6 /* ChecklistsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChecklistsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0436519129C89DA6008B57C6 /* ChecklistsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistsUITests.swift; sourceTree = "<group>"; };
 		0436519329C89DA6008B57C6 /* ChecklistsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		04C49DA429CB38A20042E04B /* Checklist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checklist.swift; sourceTree = "<group>"; };
+		04C49DA629CB39C90042E04B /* ChecklistItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistItem.swift; sourceTree = "<group>"; };
+		04C49DA829CB3C950042E04B /* Structs and classes.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Structs and classes.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,8 +101,11 @@
 			children = (
 				0436517629C89DA3008B57C6 /* ChecklistsApp.swift */,
 				0436517829C89DA3008B57C6 /* CheckListView.swift */,
+				04C49DA829CB3C950042E04B /* Structs and classes.playground */,
 				0436517A29C89DA5008B57C6 /* Assets.xcassets */,
 				0436517C29C89DA6008B57C6 /* Preview Content */,
+				04C49DA429CB38A20042E04B /* Checklist.swift */,
+				04C49DA629CB39C90042E04B /* ChecklistItem.swift */,
 			);
 			path = Checklists;
 			sourceTree = "<group>";
@@ -259,6 +267,8 @@
 			files = (
 				0436517929C89DA3008B57C6 /* CheckListView.swift in Sources */,
 				0436517729C89DA3008B57C6 /* ChecklistsApp.swift in Sources */,
+				04C49DA529CB38A20042E04B /* Checklist.swift in Sources */,
+				04C49DA729CB39C90042E04B /* ChecklistItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
