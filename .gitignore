@@ -22,7 +22,7 @@ DerivedData/
 *.perspectivev3
 !default.perspectivev3
 xcuserdata/
-xcuserdata/muranhu.xcuserdatad/
+xcuserdata/muranhu.xcuserdatad/UserInterfaceState.xcuserstate
 
 ## Obj-C/Swift specific
 *.hmap
