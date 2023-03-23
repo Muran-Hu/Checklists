@@ -17,6 +17,7 @@
 		04C49DA529CB38A20042E04B /* Checklist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C49DA429CB38A20042E04B /* Checklist.swift */; };
 		04C49DA729CB39C90042E04B /* ChecklistItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C49DA629CB39C90042E04B /* ChecklistItem.swift */; };
 		04C49DAA29CB4B860042E04B /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C49DA929CB4B860042E04B /* SplashView.swift */; };
+		119C7ED029CC4C9200CF00F0 /* NewChecklistItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119C7ECF29CC4C9200CF00F0 /* NewChecklistItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		04C49DA629CB39C90042E04B /* ChecklistItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistItem.swift; sourceTree = "<group>"; };
 		04C49DA829CB3C950042E04B /* Structs and classes.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Structs and classes.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		04C49DA929CB4B860042E04B /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		119C7ECF29CC4C9200CF00F0 /* NewChecklistItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewChecklistItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				04C49DA429CB38A20042E04B /* Checklist.swift */,
 				04C49DA629CB39C90042E04B /* ChecklistItem.swift */,
 				04C49DA929CB4B860042E04B /* SplashView.swift */,
+				119C7ECF29CC4C9200CF00F0 /* NewChecklistItemView.swift */,
 			);
 			path = Checklists;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0436517929C89DA3008B57C6 /* CheckListView.swift in Sources */,
+				119C7ED029CC4C9200CF00F0 /* NewChecklistItemView.swift in Sources */,
 				0436517729C89DA3008B57C6 /* ChecklistsApp.swift in Sources */,
 				04C49DAA29CB4B860042E04B /* SplashView.swift in Sources */,
 				04C49DA529CB38A20042E04B /* Checklist.swift in Sources */,

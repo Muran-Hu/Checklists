@@ -42,7 +42,7 @@ struct CheckListView: View {
                     }
                 }
                     .sheet(isPresented: self.$newChecklistItemViewIsVisible){
-                        Text("Hello World!")
+                        NewChecklistItemView()
                     },
                 trailing: EditButton())
             .navigationTitle("Checklist")
