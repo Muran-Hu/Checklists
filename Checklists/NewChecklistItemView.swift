@@ -9,7 +9,9 @@ import SwiftUI
 
 struct NewChecklistItemView: View {
     
+    var checklist: Checklist
     @State var newItemName = ""
+    @Environment(\.presentationMode) var presentationMode
     
     var body: some View {
         VStack {
@@ -17,7 +19,10 @@ struct NewChecklistItemView: View {
             Form {
                 TextField("Enter new item name here", text: self.$newItemName)
                 Button(action: {
-                    
+                    let newChecklistItem = CheckListItem(name: self.newItemName)
+                    self.checklist.items.append(newChecklistItem)
+                    self.checklist.printAll()
+                    self.presentationMode.wrappedValue.dismiss()
                 }) {
                     HStack {
                         Image(systemName: "plus.circle.fill")
@@ -32,6 +37,6 @@ struct NewChecklistItemView: View {
 
 struct NewChecklistItemView_Previews: PreviewProvider {
     static var previews: some View {
-        NewChecklistItemView()
+        NewChecklistItemView(checklist: Checklist())
     }
 }
