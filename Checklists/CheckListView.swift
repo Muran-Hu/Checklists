@@ -38,6 +38,7 @@ struct CheckListView: View {
             .navigationTitle("Checklist")
             .onAppear() {
                 checklist.printAll()
+                checklist.saveListItems()
             }
         }
     }
