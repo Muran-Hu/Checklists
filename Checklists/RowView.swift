@@ -9,10 +9,10 @@ import SwiftUI
 
 struct RowView: View {
     
-    @State var checklistItem: CheckListItem
+    @Binding var checklistItem: CheckListItem
     
     var body: some View {
-        NavigationLink(destination: EditChecklistItemView(checklistItem: checklistItem)) {
+        NavigationLink(destination: EditChecklistItemView(checklistItem: $checklistItem)) {
             HStack {
                 Text(checklistItem.name)
                 Spacer()
@@ -24,6 +24,6 @@ struct RowView: View {
 
 struct RowView_Previews: PreviewProvider {
     static var previews: some View {
-        RowView(checklistItem: CheckListItem(name: "Sample item"))
+        RowView(checklistItem: .constant(CheckListItem(name: "Sample item")))
     }
 }

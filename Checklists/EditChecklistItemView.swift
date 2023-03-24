@@ -9,7 +9,7 @@ import SwiftUI
 
 struct EditChecklistItemView: View {
     
-    @State var checklistItem: CheckListItem
+    @Binding var checklistItem: CheckListItem
     
     var body: some View {
         Form {
@@ -21,6 +21,6 @@ struct EditChecklistItemView: View {
 
 struct EditChecklistItemView_Previews: PreviewProvider {
     static var previews: some View {
-        EditChecklistItemView(checklistItem: CheckListItem(name: "Sample item"))
+        EditChecklistItemView(checklistItem: .constant(CheckListItem(name: "Sample item")))
     }
 }
